@@ -1,0 +1,40 @@
+#!/bin/bash
+
+VER="0.2.1 Wyndix Birthday Edition"
+DISTRO_STARNIX=$(awk '/DISTRIB_ID=/' /etc/*-release | sed 's/DISTRIB_ID=//' | sed 's/"//' | sed 's/"//')
+
+echo "                                                  
+                               .......:^7??!^     
+                      ..:^^^!JY?~!??7!?5BBGG5.    
+                     ?57~^~!YB#5!!??!!!!7??~.     
+                   .?5?!:.:^~!!!!!~~~~^~~!!7?7^   
+                  .7PBBG?:.....::^~7J7~^^~!7?JYJ!.
+               ...^PBG#G5J?7777?JYJJYPJ??77?JJY5P5
+                ...:~YGGGGP5YYYJ?7!!!7?JJJJJJYY5PP
+                  .  ^!7???????7777777??JJJYYYY5PP
+                     !!!77777777777????JJJJJJJYYY5
+                   .J57??7777777?J5YJ?7!7?????JJJY
+                   7GYJJ?777????JJYJ?777???JJJJJYY
+                   :?PP5J?JJJJJJ???????JJJYYYYYYYY
+                 .::~JJJ??YY?77??77!!7Y5PP5YYJJYYY
+              .:!!^.^7!7777!!!!7777777?77???JJJYYY
+    ...:~!!!~!?J?: .^!!77!77777777!!!!!!!!7?JJYYY5
+    ^~7JYYYYYJ7^...:~JYJ????777!!!~~~~~~!!7?JJYYY5
+      ..:~~:.   .:^!7JYYYJJJ?7!!~~~~~!!777?JJYYYY5
+        :!!J:  ..:~7JYY555YYJJ?7777777??JJYYYYY5YJ
+        :Y?P~   ..:^!7?JY55555YYJJJYY555PPPPPP5Y?!
+        .Y5G!        ...::^~~!77??JJJJJYYYYYJ?7~^.
+         JYP?                      ...........    
+         75PY.                         .......... 
+.       .^7J?:.                   ....:^^^^^^^^^^.
+"
+
+echo "$(whoami) at $(hostnamectl hostname)"
+echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+echo "linfetch version     ~" $VER
+echo "os                   ~" $DISTRO_STARNIX
+echo "terminal             ~" $TERM 
+echo "shell                ~" ${SHELL##*/}
+echo "kernel               ~" $(uname -r)
+echo "architecture         ~" $(uname -m)
+echo "bestie (WynBirEdi)   ~" $BESTIE
