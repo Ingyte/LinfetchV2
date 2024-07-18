@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VER="0.2.1 Wyndix Birthday Edition"
+VER="0.2.2"
 DISTRO_STARNIX=$(awk '/DISTRIB_ID=/' /etc/*-release | sed 's/DISTRIB_ID=//' | sed 's/"//' | sed 's/"//')
 
 echo "                                                  
@@ -37,4 +37,3 @@ echo "terminal             ~" $TERM
 echo "shell                ~" ${SHELL##*/}
 echo "kernel               ~" $(uname -r)
 echo "architecture         ~" $(uname -m)
-echo "bestie (WynBirEdi)   ~" $BESTIE
